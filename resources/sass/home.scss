@@ -1,0 +1,97 @@
+@import 'colors.scss';
+
+
+
+
+
+.container__img {
+    width: 100%;
+    height: 500px;
+    background-image: url("/img/bg_home.png");
+    background-size: cover;
+    background-position: center center;
+
+    @media(max-width: 770px) {
+        height: 300px;
+    }
+
+    @media(max-width: 560px) {
+        height: 120px;
+    }
+}
+
+.container__cards {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 100px;
+}
+
+.container__cards__item {
+    position: relative;
+    width: 25%;
+    height: 350px;
+
+    @media(max-width: 770px) {
+        width: 50%;
+    }
+
+    @media(max-width: 560px) {
+        height: 160px;
+    }
+}
+
+.container__cards__item__img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.container__cards__item__img__gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 53.65%, rgba(0, 0, 0, 0.82) 100%);
+}
+
+.container__cards__text {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.container__cards__city {
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+
+.container__cards__info {
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+
+    @media(max-width: 560px) {
+        font-size: 18px;
+    }
+}
+
+.container__cards__rate {
+    margin: 0 10px;
+}
+
+
+
+
